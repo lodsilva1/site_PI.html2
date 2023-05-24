@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,300" rel="stylesheet" type="text/css"/>
+  <div class="center">
+    <h1> <img src="gotadeouro.png"width="160" height="180"></h1>
+  </div>
+  </head>
+  <body>
+    <header>
+      <style>
+        html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  width: 500px;
+  margin: 100px auto 20px;
+  color: #ffcc00;
+  text-align: center;
+}
+
+.nav {
+  width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #000000;
+}
+.nav a {
+  display: block;
+  padding: 0 16px;
+  line-height: inherit;
+  cursor: pointer;
+}
+.nav__menu {
+  line-height: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav__menu-item {
+  display: inline-block;
+  position: relative;
+}
+.nav__menu-item:hover {
+  background-color: #ffcc00;
+}
+.nav__menu-item:hover .nav__submenu {
+  display: block;
+}
+.nav__submenu {
+  font-weight: 300;
+  text-transform: none;
+  display: none;
+  position: absolute;
+  width: 220px;
+  background-color: #ffcc00;
+}
+.nav__submenu-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  background-color: #ffcc00;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Open Sans Bold", sans-serif bold;
+  
+}
+
+button {
+ background-color: #ffcc00;
+ float: right;
+ 
+}
+   .login-form {
+      display: none; 
+      width: 300px;
+      margin: 0 auto;
+      padding: 60px;
+      border: 1px solid #080808;
+      border-radius: 5px;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #000000;
+      border-radius: 3px;
+    }
+    
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ffcc00;
+      color: #000000;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .close-btn {
+      position: absolute;
+      top:10px;
+      right: 10px;
+      font-size:20px;
+      cursor: pointer;
+    }
+
+    .close-btn:hover {
+      color: rgb(230, 8, 52);
+    }
+    .cadastro-window {
+      display: none; 
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .cadastro-window input[type="text"],
+    .cadastro-window input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    .cadastro-window button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+      </style>
+      <center>
+    <nav class="nav">
+    <ul class="nav__menu">
+      <li class="nav__menu-item"><a>  Produtos </a>
+        <ul class="nav__submenu">
+          <li class="nav__submenu-item"> <a>Óleo Sintético</a></li>
+          <li class="nav__submenu-item"> <a>Óleo Semissintético</a></li>
+          <li class="nav__submenu-item"> <a>Óleo Mineral</a></li>
+          <li class="nav__submenu-item"> <a>Filtro de Óleo</a></li>
+          <li class="nav__submenu-item"> <a>Filtro de Ar</a></li>
+          <li class="nav__submenu-item"> <a>Filtro do Combustível</a></li>
+          <li class="nav__submenu-item"> <a>Líquido de Arrefecimento</a></li>
+        </ul>
+      </li>
+      <li class="nav__menu-item"><a>  Serviços </a>
+        <ul class="nav__submenu">
+          <li class="nav__submenu-item"> <a>Troca de Óleo</a></li>
+          <li class="nav__submenu-item"> <a>Troca do Filtro do Óleo</a></li>
+          <li class="nav__submenu-item"> <a>Troca do Filtro de Combustível</a></li>
+          <li class="nav__submenu-item"> <a>Troca do Liquido de Arrefecimento</a></li>
+          <li class="nav__submenu-item"> <a>Troca do Filtro de Arrefecimento</a></li>
+          <li class="nav__submenu-item"> <a>Troca do Filtro de Ar</a></li>
+        </ul>
+      </li>
+      <li class="nav__menu-item"><a>  Combos </a>
+      <ul class="nav__submenu">
+        <li class="nav__submenu-item"> <a>Troca de Óleo + Filtro de Óleo</a></li>
+        <li class="nav__submenu-item"> <a>Filtro + Óleo</a></li>   
+    </ul>
+      </li>
+  </nav>
+  </center>
+
+    <button onclick="showLoginForm()">Fazer Login</button>
+    <span class="close-btn" onclick="closeLoginForm()">&times;</span>
+    <div id="loginForm" class="login-form">
+      <h3>Login</h3>
+      <input type="text" placeholder="Digite seu login" />
+      <input type="password" placeholder="Digite sua senha" />
+      <button onclick="login()">Entrar</button>
+    </div>
+
+    
+    <div id="cadastroWindow" class="cadastro-window">
+      <h3>Cadastro</h3>
+      <input type="text" placeholder="Digite seu login" />
+      <input type="password" placeholder="Digite sua senha" />
+      <button onclick="cadastrar()">Cadastrar</button>
+    </div>
+
+    <script>
+    function showLoginForm() {
+      var loginForm = document.getElementById("loginForm")
+      var cadastroWindow = document.getElementById("cadastroWindow");
+      var loginButton = document.querySelector("button");
+      
+      loginForm.style.display = "block";
+      cadastroWindow.style.display = "none";
+      loginButton.style.display = "none";
+    }
+     </script>
+  </header>
+    </body>
+</html>
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gota de Ouro</title>
+    </head>
+<body>
+    <header>
+        <style>
+        header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #fff;
+  padding: 30px;
+        }
+
+.logo a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 24px;
+}    
+         .menu-container {
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu-item a {
+  display: block;
+  padding: 30px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+menu-item a:hover{
+    text-decoration: none;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+
+.submenu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  background-color: #ffcc00;
+}
+
+.login form {
+  display: flex;
+  align-items: center;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+ display: flex;
+  padding: 5px;
+  color: #000000;
+  margin-right: 10px;
+}
+
+.login button {
+  border: none;
+  padding: 5px 10px;
+  background-color: #ffcc00;
+  color: #333;
+  cursor: pointer;
+}
+  </style>
+
+  <div class="logo">
+    <h1><a href="#">Gota de Ouro</a></h1>
+  </div>
+
+  <div class="menu-container">
+    <div class="menu-item">
+      <a href="#">Produtos</a>
+      <div class="submenu">
+        <a href="#">Submenu 1</a>
+        <a href="#">Submenu 2</a>
+        <a href="#">Submenu 3</a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="#">Serviços</a>
+      <div class="submenu">
+        <a href="#">Submenu 1</a>
+        <a href="#">Submenu 2</a>
+        <a href="#">Submenu 3</a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="#">Combos</a>
+      <div class="submenu">
+        <a href="#">Submenu 1</a>
+        <a href="#">Submenu 2</a>
+        <a href="#">Submenu 3</a>
+      </div>
+    </div>
+  </div>
+  <div class="login">
+    <form>
+      <input type="text" placeholder="Usuário">
+      <input type="password" placeholder="Senha">
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+  
+    </header>
+</body>
+</html>
